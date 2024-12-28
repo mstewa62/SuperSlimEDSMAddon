@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+  "name": "SuperSlimEDSM",
+  "version": "1",
+
+  "description": "Removes distracting elements from Elite Dangerous Star Map (EDSM)",
+  
+  "content_scripts": [
+    {
+      "matches": ["*://*.edsm.net/*"],
+      "js": ["weightLoss.js"]
+    }
+  ]
+}
